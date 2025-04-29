@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Weather App
+        </title>
+        
+    </head>
+
+    <body>    
+          
+      
+       
+        <div class="input">
+            <center>
+                <br>
+                <h1> Weather Report</h1><br>
+                <center>
+          
+                  <input class="inputText" type="text" placeholder="City Name" style="width: 300px; padding: 15px; font-size: 16px;">
+
+                </center>
+                <br>
+                <center>
+                <input class="button"  type="submit" value= " Submit " >
+                </center>
+                
+            </center>
+            <div id="curve_chart" class="chart" style="width: 400px; height: 250px"></div>
+            </div>
+            <div class="result" >
+                <center>
+                  <h1 class="namer" ></h1>
+                  <p class="temp"></p>
+                  
+                  <p  class="lat"></p>
+                  <p  class="lon"></p>
+                </center>
+            </div>
+            
+        <div class="container">
+            <div class="current-info">
+                
+                <div class="date-container">
+                    <!-- <p class = "timeone"></p> -->
+
+                    <div class="others" id="current-weather-items">
+                      <center>
+                        <div class="weather-items">
+
+                        </div>
+               
+                        
+                    </div>
+                </div>
+              
+        
+
+                <div class="place-container">
+                    <!-- <p class="conName"> ZoneName </p>            -->
+                    
+                </div>
+            </div>
+
+        </div>
+          
+
+            <div class="future-container">
+                <div class="today" id="current-temp">
+                                          <div class="day">Mon</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png"alt="weather-icon" class="w-icon">
+                  
+                     <div class="other">
+                 
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                     </div>
+                     
+                </div>
+            
+
+                <div class="weather-forecast" id="weather-forecast">
+                    <div class="weather-forecast-items">
+                        <div class="day">Tue</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-items">
+                        <div class="day">Wed</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-items">
+                        <div class="day">Thu</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-items">
+                        <div class="day">Fri</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-items">
+                        <div class="day">Sat</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-items">
+                        <div class="day">Sun</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    
+                </div>
+            </div>
+         
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
